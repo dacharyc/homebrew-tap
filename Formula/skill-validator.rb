@@ -5,21 +5,21 @@
 class SkillValidator < Formula
   desc "CLI tool that validates and scores Agent Skill packages"
   homepage "https://github.com/dacharyc/skill-validator"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.0/skill-validator_0.5.0_darwin_amd64.tar.gz"
-      sha256 "d7c45304fd2f21f1d86a76edf3634673c9a40fc3a1d054e56535142085d743be"
+      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.1/skill-validator_0.5.1_darwin_amd64.tar.gz"
+      sha256 "69d09f502860ca823400f81cc21f02ed0a5179f2f38108d2da2dcdc66df93e34"
 
       def install
         bin.install "skill-validator"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.0/skill-validator_0.5.0_darwin_arm64.tar.gz"
-      sha256 "a16d30d65023b98d3dfb169b6cb864dcb84cdf406b33a1e09e90b330983195be"
+      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.1/skill-validator_0.5.1_darwin_arm64.tar.gz"
+      sha256 "99eb8a4799fbea694f943c064e8fa8e15d95232190eae492172998c8777ac02c"
 
       def install
         bin.install "skill-validator"
@@ -29,15 +29,15 @@ class SkillValidator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.0/skill-validator_0.5.0_linux_amd64.tar.gz"
-      sha256 "52aa042e12f0862837b41032ee82d185e7136b2031e1e8102c8fd4eb4295099a"
+      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.1/skill-validator_0.5.1_linux_amd64.tar.gz"
+      sha256 "e14769391acb864bf9365afd9d085834cf76c81a27af25b929231576170dd499"
       def install
         bin.install "skill-validator"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.0/skill-validator_0.5.0_linux_arm64.tar.gz"
-      sha256 "b75d42ab6ee59e117daca789ec36293090a27ca5ba94d5398e572d9f290f9608"
+      url "https://github.com/dacharyc/skill-validator/releases/download/v0.5.1/skill-validator_0.5.1_linux_arm64.tar.gz"
+      sha256 "2ae78974b7e306e63d0084e2dbc4ecf1009ae550a3a9be67a455ff369b4a8a59"
       def install
         bin.install "skill-validator"
       end
