@@ -8,6 +8,8 @@ class SkillValidator < Formula
   version "0.8.1"
   license "MIT"
 
+  deprecate! date: "2026-04-07", because: "it has moved to a different tap!", replacement_formula: "agent-ecosystem/tap/skill-validator"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dacharyc/skill-validator/releases/download/v0.8.1/skill-validator_0.8.1_darwin_amd64.tar.gz"
